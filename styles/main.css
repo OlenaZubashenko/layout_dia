@@ -48,7 +48,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     max-width: 1100px;
-    margin: 0 auto;
     padding-top: 40px; }
     .header__nav .nav__logo {
       background: url(../images/logo/Air.png) no-repeat;
@@ -101,12 +100,10 @@ body {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+            justify-content: space-between; }
     .header .header__info-wrapper .header-info {
-      padding-left: 200px; }
+      padding-left: 200px;
+      margin-top: 100px; }
       .header .header__info-wrapper .header-info .header__title {
         font-weight: 600;
         font-size: 64px; }
