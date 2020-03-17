@@ -59,6 +59,8 @@ a {
       height: 30px;
       background-size: cover;
       margin-left: 200px; }
+    .header__nav .nav__open {
+      display: none; }
     .header__nav .nav__list {
       display: -webkit-box;
       display: -ms-flexbox;
