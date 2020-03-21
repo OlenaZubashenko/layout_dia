@@ -61,7 +61,7 @@ body {
     padding-top: 40px;
     margin: 0 auto; }
     .header__nav .nav__logo {
-      background: url(../images/logo/Air.png) no-repeat;
+      background: url(../images/logo/Air.svg) no-repeat;
       width: 50px;
       height: 30px;
       background-size: cover;
@@ -164,7 +164,8 @@ body {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        max-width: 360px; }
+        max-width: 360px;
+        margin: 30px; }
         .header .header__info-wrapper .header-slider .slider-text-wrapper .slider-btn {
           cursor: pointer;
           width: 30px;
@@ -374,10 +375,19 @@ body {
       max-width: 264px;
       text-align: center; }
       .expertise .block-wrapper .block__img {
+        cursor: pointer;
         width: 180px;
         height: 166px;
         border-radius: 25px;
-        margin: 40px auto; }
+        margin: 40px auto;
+        -webkit-transition: border-radius 0.3s, -webkit-transform 0.3s;
+        transition: border-radius 0.3s, -webkit-transform 0.3s;
+        transition: transform 0.3s, border-radius 0.3s;
+        transition: transform 0.3s, border-radius 0.3s, -webkit-transform 0.3s; }
+      .expertise .block-wrapper .block__img:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+        border-radius: 50%; }
       .expertise .block-wrapper .block .expertise-img1 {
         background: url(../images/expertise/1.jpg) no-repeat;
         background-size: cover; }
@@ -448,15 +458,29 @@ body {
       position: relative;
       top: 145px; }
     .info .info__card-wrapper .card-wrapper .card {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       max-width: 264px;
       height: 264px;
       background: #fff;
       color: #6c788b;
-      padding: 20px;
+      padding: 30px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       border-radius: 15px;
-      margin: 30px 15px; }
+      margin: 30px 15px;
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
       .info .info__card-wrapper .card-wrapper .card .num-wrap {
         width: 46px;
         height: 24px;
@@ -468,11 +492,11 @@ body {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center;
-          padding-top: 3px; }
+          padding-top: 5px;
+          font-size: 13px; }
       .info .info__card-wrapper .card-wrapper .card .card__text {
         font-family: "Open-Sans", sans-serif;
-        letter-spacing: 2px;
-        line-height: 20px;
+        line-height: 150%;
         color: #6c788b;
         font-weight: 600;
         font-size: 13px;
@@ -543,6 +567,9 @@ body {
         background-color: #f8b79e; }
         .info .info__card-wrapper .card-wrapper .card .number--red .number4 {
           color: #cc2f07; }
+    .info .info__card-wrapper .card-wrapper .card:hover {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04); }
 
 @media (max-width: 1000px) {
   .info {
@@ -738,7 +765,11 @@ body {
               align-items: center;
       padding: 30px;
       border-radius: 24px;
-      background-color: #fcfafa; }
+      background-color: #fcfafa;
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s; }
       .testimonials .testimonials__card-wrapper .testimonials__card .card__top {
         position: relative;
         margin: 30px 0 80px; }
@@ -785,7 +816,14 @@ body {
         background: url(../images/testimonials/1.png) no-repeat;
         border-radius: 50%;
         position: relative;
-        z-index: 15; }
+        z-index: 15;
+        -webkit-transition: -webkit-transform 0.3s;
+        transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+        transition: transform 0.3s, -webkit-transform 0.3s; }
+      .testimonials .testimonials__card-wrapper .testimonials__card .top__photo:hover {
+        -webkit-transform: scale(0.9);
+                transform: scale(0.9); }
       .testimonials .testimonials__card-wrapper .testimonials__card .top__photo2 {
         background: url(../images/testimonials/2.png) no-repeat; }
       .testimonials .testimonials__card-wrapper .testimonials__card .top__photo3 {
@@ -812,7 +850,11 @@ body {
       .testimonials .testimonials__card-wrapper .testimonials__card .card__profession {
         letter-spacing: 3px;
         text-transform: uppercase;
-        color: #c0cdd7; }
+        color: #c0cdd7;
+        text-align: center; }
+    .testimonials .testimonials__card-wrapper .testimonials__card:hover {
+      -webkit-transform: scale(1.01);
+              transform: scale(1.01); }
 
 @media (max-width: 1300px) {
   .testimonials .testimonials__description {
@@ -961,13 +1003,22 @@ body {
           cursor: pointer;
           width: 30px;
           height: 30px;
-          background-size: cover; }
+          background-size: cover;
+          -webkit-transition: -webkit-transform 0.3s;
+          transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+          transition: transform 0.3s, -webkit-transform 0.3s; }
         .footer .footer-wrapper .contacts .socias-wrapper .fb {
           background: url(../images/socia/fb.png) no-repeat; }
         .footer .footer-wrapper .contacts .socias-wrapper .tw {
           background: url(../images/socia/tw.png) no-repeat; }
         .footer .footer-wrapper .contacts .socias-wrapper .in {
           background: url(../images/socia/in.png) no-repeat; }
+        .footer .footer-wrapper .contacts .socias-wrapper .fb:hover,
+        .footer .footer-wrapper .contacts .socias-wrapper .tw:hover,
+        .footer .footer-wrapper .contacts .socias-wrapper .in:hover {
+          -webkit-transform: scale(1.1);
+                  transform: scale(1.1); }
 
 @media (max-width: 1300px) {
   .footer {
