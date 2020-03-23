@@ -958,25 +958,30 @@ body {
       .footer .footer-wrapper .footer__form .form .input::-webkit-input-placeholder {
         color: #fff;
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0.7; }
       .footer .footer-wrapper .footer__form .form .input::-moz-placeholder {
         color: #fff;
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0.7; }
       .footer .footer-wrapper .footer__form .form .input:-ms-input-placeholder {
         color: #fff;
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0.7; }
       .footer .footer-wrapper .footer__form .form .input::-ms-input-placeholder {
         color: #fff;
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0.7; }
       .footer .footer-wrapper .footer__form .form .input::placeholder {
         color: #fff;
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif; }
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0.7; }
       .footer .footer-wrapper .footer__form .form .input:focus {
-        font-weight: bold; }
+        opacity: 1; }
       .footer .footer-wrapper .footer__form .form__message {
         resize: none; }
     .footer .footer-wrapper .contacts {
