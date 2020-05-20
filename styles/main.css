@@ -75,22 +75,22 @@ body {
       display: flex; }
       .header__nav .nav__list .nav__item {
         list-style: none;
-        margin-left: 60px;
-        padding: 10px 0;
-        border-bottom: 1.5px solid #008aff;
-        border-top: 1.5px solid #008aff;
-        -webkit-transition: border-top 0.4s, border-bottom 0.4s;
-        transition: border-top 0.4s, border-bottom 0.4s; }
-        .header__nav .nav__list .nav__item:hover {
-          border-top: 1.5px solid #fff;
-          border-bottom: 1.5px solid #fff; }
+        margin-left: 60px; }
         .header__nav .nav__list .nav__item .nav__link {
           line-height: 150%;
           text-transform: uppercase;
           color: #fff;
           font-weight: bold;
           font-size: 13px;
-          text-decoration: none; }
+          text-decoration: none;
+          padding: 10px 0;
+          border-bottom: 1.5px solid #008aff;
+          border-top: 1.5px solid #008aff;
+          -webkit-transition: border-top 0.4s, border-bottom 0.4s;
+          transition: border-top 0.4s, border-bottom 0.4s; }
+          .header__nav .nav__list .nav__item .nav__link:hover {
+            border-top: 1.5px solid #fff;
+            border-bottom: 1.5px solid #fff; }
     .header__nav .hire-btn {
       cursor: pointer;
       margin-right: 10px;
